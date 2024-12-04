@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Station</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Feather Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="weather-side">
+        <div class="weather-gradient">
+            <div class="date-container">
+                <h2 class="date-dayname" id="day-name">Day</h2>
+                <span class="date-day" id="date">Date</span>
+                <i class="location-icon" data-feather="map-pin"></i>
+                <span class="location" id="location">Greater Noida, IN</span>
+            </div>
+            <div class="weather-container">
+                <i class="weather-icon" id="weather-icon" data-feather="sun"></i>
+                <h1 class="weather-temp" id="temperature">...</h1>
+                <h3 class="weather-desc" id="description">Sunny</h3>
+            </div>
+        </div>
+    </div>
+    <div class="info-side">
+        <div class="today-info-container">
+            <div class="today-info">
+                <div class="precipitation">
+                    <span class="title">RAIN</span>
+                    <span class="value" id="precipitation">0 %</span>
+                    <div class="clear"></div>
+                </div>
+                <div class="humidity">
+                    <span class="title">HUMIDITY</span>
+                    <span class="value" id="humidity">34 %</span>
+                    <div class="clear"></div>
+                </div>
+                <div class="wind">
+                    <span class="title">WIND&ensp;</span>
+                    <span class="value" id="wind">0 km/h</span>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="module" src="script.js"></script>
+<script type="module" src="script2.js"></script>
+</body>
+</html>
